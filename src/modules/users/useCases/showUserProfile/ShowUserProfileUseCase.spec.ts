@@ -19,7 +19,7 @@ describe("Should be able to show user profile", () => {
       usersRepositoryInMemory,
     );
   });
-  it("It should be possible to show a user's profile", async () => {
+  it("Should be possible to show a user's profile", async () => {
     const userDTO = {
       name: "João das Coves",
       email: "joaodascoves@email.com",
@@ -31,7 +31,7 @@ describe("Should be able to show user profile", () => {
     expect(findUser.name).toBe("João das Coves");
   });
 
-  it("It shouldn't be able to show the profile of a non-existent user", async () => {
+  it("Shouldn't be able to show the profile of a non-existent user", async () => {
     expect(async () => {
       const userDTO = {
         name: "João das Coves",
